@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+section {
+    background-color: white;
+    border: none;
+}
+
+.hero{
+    background-image: #2c2e3e;
+    height: 100vh;
+    color: white;
+    font-size: 40px;
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+        
+}
+footer{
+    height: 200px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+ul.show{
+    display: block;
+}
+
+li{
+    
+    text-decoration: none;
+}
+
+h1{
+    font-size: 90px;
+    margin: 0;
+}
+
+h2{
+    font-size: 50px;
+}
+
+
+p{
+    margin: 0;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.subtext{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.subtext2{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.hero-area{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text{
+    margin-left: 80px;
+    margin-bottom: 200px;
+}
+
+.hero-name{
+    transition: 0.5s;
+}
+
+.hero-name:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+.button{
+    width: 200px;
+    height: 49px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+.button:hover{
+    background-color: transparent;
+}
+
+.button:active{
+    background-color: transparent;
+    color: transparent;
+}
+
+.socials{
+    padding-bottom: 200px;
+    transition: 0.5s;
+}
+
+.socials:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+.logo{
+   height: 200px;
+   top: 0;
+   left: -1;
+
+}
+
+.social{
+    margin: 20px;
+}
+
+.sub-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+}
+
+.sub-section-alternate{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 60px;
+}
+
+.headshot{
+    width: 300px;
+    border-radius: 300px;
+    padding: 50px;
+}
+
+.headshot-container{
+    display: flex;
+    align-items: center;
+}
+
+.project-card{
+    position: relative;
+    margin: 10px;
+    width: 400px;
+    height: 500px;
+    box-shadow: 5px 5px 20px grey;
+    overflow: hidden;
+}
+
+.project-videos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.project-videos video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+}
+
+.project-content{
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    color: white;
+    background-color:transparent;
+}
+
+.project-image {
+    width: 100%;
+    max-height: 200px; /* Adjust the image height as needed */
+    object-fit: cover;
+  }
+  
+  .project-content h3,
+  .project-content p {
+    margin: 10px 0;
+  }
+  
+  .project-content .subtext {
+    margin-top: auto;
+  }
+
+.project-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width:1000px){
+    .project-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.project-image{
+    margin-top: 25px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+.dvid{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Project-link{
+    text-decoration: none;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger{
+    display: none;
+}
+
+.hamburger:focus{
+    outline: 0;
+}
+
+@media only screen and (max-width:1000px){
+    .hamburger{
+        display: block;
+        border:0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+    ul{
+        display: none;
+        background-color: transparent;
+        margin: 0px;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: transparent;
+    }
+
+    .logo{
+        display: none;
+    }
+}
